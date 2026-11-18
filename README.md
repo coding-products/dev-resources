@@ -4,79 +4,110 @@
 
 多数项目**不需要 fork**，用包管理器安装即可。这个仓库只做导航和选型参考，不复制源码。
 
-> 数据截至 2026-11-18，Star 数会变化。
+> 数据截至 2026-11-18，Star 数会变化。许可证以仓库 LICENSE 为准。
 
 ---
 
 ## 动效
 
-| 项目 | Star | 说明 | 怎么用 |
-|---|---|---|---|
-| [motiondivision/motion](https://github.com/motiondivision/motion) | 35.3k | React / JS 动画库，Framer Motion 后继 | `pnpm add motion` |
-| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 52.2k | React 动画与交互组件集合 | 按组件复制或 npm |
-| [DavidHDev/vue-bits](https://github.com/DavidHDev/vue-bits) | 4.7k | Vue 版动画组件集合 | 按组件复制 |
-| [juliangarnier/anime](https://github.com/juliangarnier/anime) | 74.9k | 轻量 JS 动画引擎 | `pnpm add animejs` |
-| [airbnb/lottie-web](https://github.com/airbnb/lottie-web) | 32.5k | After Effects 动画渲染到 Web | `pnpm add lottie-web` |
-| [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | HTML 演示框架 | 直接引用 |
-| [blasten/turn.js](https://github.com/blasten/turn.js) | 7.5k | HTML5 翻页效果 | 直接引用 |
-| [ts1/flipbook-vue](https://github.com/ts1/flipbook-vue) | 772 | Vue 3D 翻页 | `pnpm add vue-flipbook` |
-| [gl-transitions/gl-transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | GLSL 转场集合 | 视频/WebGL 转场参考 |
-| [scriptituk/xfade-easing](https://github.com/scriptituk/xfade-easing) | 127 | FFmpeg xfade 缓动扩展 | 与 `cc-ffmpeg-xfade` 配套 |
-| [ColorlibHQ/velora-ui](https://github.com/ColorlibHQ/velora-ui) | 64 | 动画 shadcn 组件 + 落地页模板 | 已 fork |
-| [lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) | 9.1k | HTML 演示文稿生成技能 | Agent Skill |
+| 项目 | Star | 许可证 | 说明 | 怎么用 |
+|---|---|---|---|---|
+| [juliangarnier/anime](https://github.com/juliangarnier/anime) | 74.9k | MIT | 轻量 JS 动画引擎 | `pnpm add animejs` |
+| [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | MIT | HTML 演示框架 | 直接引用 |
+| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 52.2k | MIT | React 动画与交互组件集合 | 按组件复制或 npm |
+| [motiondivision/motion](https://github.com/motiondivision/motion) | 35.3k | MIT | React / JS 动画库，Framer Motion 后继 | `pnpm add motion` |
+| [airbnb/lottie-web](https://github.com/airbnb/lottie-web) | 32.5k | MIT | After Effects 动画渲染到 Web | `pnpm add lottie-web` |
+| [pmndrs/react-spring](https://github.com/pmndrs/react-spring) | 29.3k | MIT | 基于弹簧物理的 React 动画 | `pnpm add @react-spring/web` |
+| [michalsnik/aos](https://github.com/michalsnik/aos) | 28.1k | MIT | 滚动进入动画 | `pnpm add aos` |
+| [mattboldt/typed.js](https://github.com/mattboldt/typed.js) | 16.3k | MIT | 打字机效果 | `pnpm add typed.js` |
+| [formkit/auto-animate](https://github.com/formkit/auto-animate) | 14.0k | MIT | 零配置自动动画 | `pnpm add @formkit/auto-animate` |
+| [theatre-js/theatre](https://github.com/theatre-js/theatre) | 13.0k | Apache-2.0 | 可视化动效编辑器 | 动效调试 |
+| [tsparticles/tsparticles](https://github.com/tsparticles/tsparticles) | 9.1k | MIT | 粒子背景 | `pnpm add @tsparticles/react` |
+| [blasten/turn.js](https://github.com/blasten/turn.js) | 7.5k | MIT | HTML5 翻页效果 | 直接引用 |
+| [lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) | 9.1k | MIT | HTML 演示文稿生成技能 | Agent Skill |
+| [DavidHDev/vue-bits](https://github.com/DavidHDev/vue-bits) | 4.7k | MIT | Vue 版动画组件集合 | 按组件复制 |
+| [vueuse/motion](https://github.com/vueuse/motion) | 2.8k | MIT | Vue 组合式动画 | `pnpm add @vueuse/motion` |
+| [gl-transitions/gl-transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | MIT | GLSL 转场集合 | 视频/WebGL 转场参考 |
+| [ts1/flipbook-vue](https://github.com/ts1/flipbook-vue) | 772 | MIT | Vue 3D 翻页 | `pnpm add vue-flipbook` |
+| [scriptituk/xfade-easing](https://github.com/scriptituk/xfade-easing) | 127 | MIT | FFmpeg xfade 缓动扩展 | 与 `cc-ffmpeg-xfade` 配套 |
 
-**选型**：React 项目优先 `motion` + `react-bits`；Vue 项目用 `vue-bits` + `flipbook-vue`；视频转场看 `gl-transitions` 和 `xfade-easing`。
+**选型**：React 优先 `motion` + `react-bits`；需要弹簧手感用 `react-spring`；Vue 用 `vue-bits` + `motion`；视频转场看 `gl-transitions` 和 `xfade-easing`。
 
 ---
 
 ## 音效 / 音频
 
-| 项目 | Star | 说明 | 怎么用 |
-|---|---|---|---|
-| [kapishdima/soundcn](https://github.com/kapishdima/soundcn) | 951 | 700+ UI 音效，带预览和安装命令 | `npx soundcn` |
-| [romainsimon/uisfx](https://github.com/romainsimon/uisfx) | 945 | 界面音效库（Vue） | 按需引入 |
-| [SPlayer-Dev/SPlayer](https://github.com/SPlayer-Dev/SPlayer) | 7.4k | 跨平台音乐播放器 | 桌面端参考 |
-| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 33.8k | 开源 TTS | 模型部署 |
-| [QwenAudio/CosyVoice](https://github.com/QwenAudio/CosyVoice) | 24.4k | 多语言语音生成 | 模型部署 |
-| [OpenMOSS/MOSS-TTSD](https://github.com/OpenMOSS/MOSS-TTSD) | 1.4k | 多说话人对话合成 | 模型部署 |
+| 项目 | Star | 许可证 | 说明 | 怎么用 |
+|---|---|---|---|---|
+| [goldfire/howler.js](https://github.com/goldfire/howler.js) | 25.5k | MIT | 现代 Web 音频播放库 | `pnpm add howler` |
+| [Tonejs/Tone.js](https://github.com/Tonejs/Tone.js) | 14.9k | MIT | Web Audio 框架，做交互音乐 | `pnpm add tone` |
+| [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) | 10.5k | BSD-3-Clause | 音频波形播放器 | `pnpm add wavesurfer.js` |
+| [SPlayer-Dev/SPlayer](https://github.com/SPlayer-Dev/SPlayer) | 7.4k | MIT | 跨平台音乐播放器 | 桌面端参考 |
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 33.8k | Apache-2.0 | 开源 TTS | 模型部署 |
+| [QwenAudio/CosyVoice](https://github.com/QwenAudio/CosyVoice) | 24.4k | Apache-2.0 | 多语言语音生成 | 模型部署 |
+| [kapishdima/soundcn](https://github.com/kapishdima/soundcn) | 951 | MIT | 700+ UI 音效，带预览 | `npx soundcn` |
+| [romainsimon/uisfx](https://github.com/romainsimon/uisfx) | 945 | MIT | 界面音效库（Vue） | 按需引入 |
+| [OpenMOSS/MOSS-TTSD](https://github.com/OpenMOSS/MOSS-TTSD) | 1.4k | Apache-2.0 | 多说话人对话合成 | 模型部署 |
 
-**选型**：给网页加反馈音用 `soundcn` 或 `uisfx`；语音合成看 `CosyVoice` / `fish-speech`。
+**选型**：网页音频播放用 `howler`；需要合成/交互音乐用 `Tone.js`；波形可视化用 `wavesurfer`；UI 反馈音用 `soundcn` 或 `uisfx`。
+
+**注意**：`bbc/peaks.js` 是 LGPL-3.0，商用前确认合规，暂不列入推荐。
 
 ---
 
 ## 图标
 
-你 star 列表里暂时没有专门的图标库，下面是常用补充：
+| 项目 | Star | 许可证 | 说明 | 怎么用 |
+|---|---|---|---|---|
+| [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome) | 77.0k | CC BY 4.0 / OFL / MIT | 经典图标字体与 SVG | `pnpm add @fortawesome/fontawesome-free` |
+| [google/material-design-icons](https://github.com/google/material-design-icons) | 54.3k | Apache-2.0 | Material Symbols 官方图标 | 按需下载 |
+| [feathericons/feather](https://github.com/feathericons/feather) | 26.0k | MIT | 简洁线条图标 | `pnpm add feather-icons` |
+| [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) | 23.9k | MIT | Tailwind 官方图标 | `pnpm add @heroicons/react` |
+| [microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons) | 11.0k | MIT | Fluent 系统图标 | 按需下载 |
+| [Remix-Design/RemixIcon](https://github.com/Remix-Design/RemixIcon) | 8.5k | Apache-2.0 | 中性风格图标系统 | `pnpm add remixicon` |
+| [iconoir-icons/iconoir](https://github.com/iconoir-icons/iconoir) | 4.6k | MIT | 1,383 个 SVG 图标 | `pnpm add iconoir-react` |
+| [lucide-icons/lucide](https://github.com/lucide-icons/lucide) | 20k+ | ISC | shadcn 默认图标库 | `pnpm add lucide-react` |
+| [tabler/tabler-icons](https://github.com/tabler/tabler-icons) | 20k+ | MIT | 5000+ 图标，多框架 | `pnpm add @tabler/icons-react` |
+| [iconify/iconify](https://github.com/iconify/iconify) | 4k+ | MIT | 统一 200+ 图标集 | `pnpm add @iconify/react` |
+| [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) | 21k+ | CC0 1.0 | 品牌 Logo 图标 | `pnpm add simple-icons` |
+| [phosphor-icons/phosphor](https://github.com/phosphor-icons/phosphor) | 8k+ | MIT | 多字重图标系统 | `pnpm add @phosphor-icons/react` |
 
-| 项目 | 说明 | 怎么用 |
-|---|---|---|
-| [lucide-icons/lucide](https://github.com/lucide-icons/lucide) | 线条风格，shadcn 默认图标库 | `pnpm add lucide-react` |
-| [tabler/tabler-icons](https://github.com/tabler/tabler-icons) | 5000+ 图标，多框架 | `pnpm add @tabler/icons-react` |
-| [iconify/iconify](https://github.com/iconify/iconify) | 统一 200+ 图标集 | `pnpm add @iconify/react` |
-| [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) | 品牌 Logo 图标 | `pnpm add simple-icons` |
-| [phosphor-icons/phosphor](https://github.com/phosphor-icons/phosphor) | 多字重图标系统 | `pnpm add @phosphor-icons/react` |
+**选型**：shadcn 项目用 `lucide`；需要品牌图标用 `simple-icons`；图标数量大用 `iconify`；Tailwind 项目用 `heroicons`。
 
-**选型**：shadcn 项目直接用 `lucide`；需要品牌图标用 `simple-icons`；图标集多时用 `iconify`。
+**注意**：Font Awesome 免费版是 CC BY 4.0（图标）+ OFL（字体）+ MIT（代码），商用需保留署名；Pro 版是商业授权。
 
 ---
 
 ## UI / 组件
 
-| 项目 | Star | 说明 | 适合 |
-|---|---|---|---|
-| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 128.5k | 可组合、可访问的组件 | React 项目默认 |
-| [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | 98.8k | 原子化 CSS | 几乎所有新项目 |
-| [saadeghi/daisyui](https://github.com/saadeghi/daisyui) | 42.9k | Tailwind 组件主题 | 快速出原型 |
-| [tailwindlabs/headlessui](https://github.com/tailwindlabs/headlessui) | 28.8k | 无样式可访问组件 | 自定义设计系统 |
-| [ueberdosis/tiptap](https://github.com/ueberdosis/tiptap) | 39.1k | Headless 富文本编辑器 | 文档/编辑器 |
-| [element-plus/element-plus](https://github.com/element-plus/element-plus) | 27.9k | Vue 3 组件库 | 后台管理系统 |
-| [youzan/vant](https://github.com/youzan/vant) | 24.4k | 移动端 Vue 组件库 | H5 / 小程序 |
-| [tusen-ai/naive-ui](https://github.com/tusen-ai/naive-ui) | 18.6k | Vue 3 组件库 | 中后台 |
-| [unovue/shadcn-vue](https://github.com/unovue/shadcn-vue) | 10.8k | shadcn 的 Vue 版 | Vue 项目 |
-| [primefaces/primevue](https://github.com/primefaces/primevue) | 14.4k | Vue 组件库 | 企业应用 |
-| [satnaing/shadcn-admin](https://github.com/satnaing/shadcn-admin) | 16.8k | shadcn 后台模板 | 快速起后台 |
-| [vbenjs/vue-vben-admin](https://github.com/vbenjs/vue-vben-admin) | 33.8k | Vue3 + shadcn 后台 | 中大型后台 |
-| [TanStack/virtual](https://github.com/TanStack/virtual) | 7.2k | 大列表虚拟滚动 | 长列表/表格 |
+| 项目 | Star | 许可证 | 说明 | 适合 |
+|---|---|---|---|---|
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 128.5k | MIT | 可组合、可访问的组件 | React 项目默认 |
+| [ant-design/ant-design](https://github.com/ant-design/ant-design) | 100.3k | MIT | 企业级 UI 设计语言 | 中后台 |
+| [mui/material-ui](https://github.com/mui/material-ui) | 99.4k | MIT | 完整 React 组件库 | 快速成型 |
+| [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | 98.8k | MIT | 原子化 CSS | 几乎所有新项目 |
+| [storybookjs/storybook](https://github.com/storybookjs/storybook) | 91.6k | MIT | 组件开发与文档工作台 | 组件库建设 |
+| [react-hook-form/react-hook-form](https://github.com/react-hook-form/react-hook-form) | 44.9k | MIT | 表单状态管理 | 复杂表单 |
+| [saadeghi/daisyui](https://github.com/saadeghi/daisyui) | 42.9k | MIT | Tailwind 组件主题 | 快速原型 |
+| [vuetifyjs/vuetify](https://github.com/vuetifyjs/vuetify) | 41.0k | MIT | Vue 组件框架 | Vue 中后台 |
+| [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 40.7k | MIT | SaaS 风格组件系统 | React 产品 |
+| [ueberdosis/tiptap](https://github.com/ueberdosis/tiptap) | 39.1k | MIT | Headless 富文本编辑器 | 文档/编辑器 |
+| [floating-ui/floating-ui](https://github.com/floating-ui/floating-ui) | 32.8k | MIT | 浮层定位引擎 | 弹层/下拉 |
+| [mantinedev/mantine](https://github.com/mantinedev/mantine) | 32.0k | MIT | 功能完整的 React 组件库 | 中后台 |
+| [heroui-inc/heroui](https://github.com/heroui-inc/heroui) | 31.3k | Apache-2.0 | 动效友好的 React UI 库 | 产品界面 |
+| [tailwindlabs/headlessui](https://github.com/tailwindlabs/headlessui) | 28.8k | MIT | 无样式可访问组件 | 自定义设计系统 |
+| [TanStack/table](https://github.com/TanStack/table) | 28.6k | MIT | Headless 表格 | 数据表格 |
+| [element-plus/element-plus](https://github.com/element-plus/element-plus) | 27.9k | MIT | Vue 3 组件库 | 后台管理系统 |
+| [quasarframework/quasar](https://github.com/quasarframework/quasar) | 27.2k | MIT | Vue 全栈框架 | 多端应用 |
+| [youzan/vant](https://github.com/youzan/vant) | 24.4k | MIT | 移动端 Vue 组件库 | H5 / 小程序 |
+| [magicuidesign/magicui](https://github.com/magicuidesign/magicui) | 23.4k | MIT | 动效组件库 | 营销页 |
+| [radix-ui/primitives](https://github.com/radix-ui/primitives) | 19.5k | MIT | 无样式可访问基础组件 | 设计系统底座 |
+| [tusen-ai/naive-ui](https://github.com/tusen-ai/naive-ui) | 18.6k | MIT | Vue 3 组件库 | 中后台 |
+| [satnaing/shadcn-admin](https://github.com/satnaing/shadcn-admin) | 16.8k | MIT | shadcn 后台模板 | 快速起后台 |
+| [primefaces/primevue](https://github.com/primefaces/primevue) | 14.4k | MIT | Vue 组件库 | 企业应用 |
+| [unovue/shadcn-vue](https://github.com/unovue/shadcn-vue) | 10.8k | MIT | shadcn 的 Vue 版 | Vue 项目 |
+| [vbenjs/vue-vben-admin](https://github.com/vbenjs/vue-vben-admin) | 33.8k | MIT | Vue3 + shadcn 后台 | 中大型后台 |
+| [TanStack/virtual](https://github.com/TanStack/virtual) | 7.2k | MIT | 大列表虚拟滚动 | 长列表/表格 |
 
 **选型**：React 用 `shadcn-ui` + `tailwindcss`；Vue 用 `shadcn-vue` 或 `element-plus`；移动端用 `vant`；后台模板看 `shadcn-admin` / `vue-vben-admin`。
 
@@ -85,10 +116,11 @@
 ## 使用原则
 
 1. **优先装包，不 fork**：fork 只在需要改源码时做。
-2. **动效克制**：尊重 `prefers-reduced-motion`，不要为动效牺牲首屏。
-3. **音效默认关闭**：给用户开关，不要自动播放。
-4. **图标统一一套**：混用多套图标会让界面显得杂乱。
-5. **UI 库只选一个**：同一个项目里不要同时引入多个组件库。
+2. **先看许可证**：优先 MIT / Apache-2.0 / BSD / ISC；LGPL、AGPL、非商业协议要单独评估。
+3. **动效克制**：尊重 `prefers-reduced-motion`，不要为动效牺牲首屏。
+4. **音效默认关闭**：给用户开关，不要自动播放。
+5. **图标统一一套**：混用多套图标会让界面显得杂乱。
+6. **UI 库只选一个**：同一个项目里不要同时引入多个组件库。
 
 ---
 
