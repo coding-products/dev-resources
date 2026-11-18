@@ -14,24 +14,20 @@
 |---|---|---|---|---|
 | [juliangarnier/anime](https://github.com/juliangarnier/anime) | 74.9k | MIT | 轻量 JS 动画引擎 | `pnpm add animejs` |
 | [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | MIT | HTML 演示框架 | 直接引用 |
-| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | 52.2k | MIT | React 动画与交互组件集合 | 按组件复制或 npm |
 | [motiondivision/motion](https://github.com/motiondivision/motion) | 35.3k | MIT | React / JS 动画库，Framer Motion 后继 | `pnpm add motion` |
 | [airbnb/lottie-web](https://github.com/airbnb/lottie-web) | 32.5k | MIT | After Effects 动画渲染到 Web | `pnpm add lottie-web` |
 | [pmndrs/react-spring](https://github.com/pmndrs/react-spring) | 29.3k | MIT | 基于弹簧物理的 React 动画 | `pnpm add @react-spring/web` |
 | [michalsnik/aos](https://github.com/michalsnik/aos) | 28.1k | MIT | 滚动进入动画 | `pnpm add aos` |
-| [mattboldt/typed.js](https://github.com/mattboldt/typed.js) | 16.3k | MIT | 打字机效果 | `pnpm add typed.js` |
 | [formkit/auto-animate](https://github.com/formkit/auto-animate) | 14.0k | MIT | 零配置自动动画 | `pnpm add @formkit/auto-animate` |
 | [theatre-js/theatre](https://github.com/theatre-js/theatre) | 13.0k | Apache-2.0 | 可视化动效编辑器 | 动效调试 |
 | [tsparticles/tsparticles](https://github.com/tsparticles/tsparticles) | 9.1k | MIT | 粒子背景 | `pnpm add @tsparticles/react` |
-| [blasten/turn.js](https://github.com/blasten/turn.js) | 7.5k | MIT | HTML5 翻页效果 | 直接引用 |
 | [lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) | 9.1k | MIT | HTML 演示文稿生成技能 | Agent Skill |
-| [DavidHDev/vue-bits](https://github.com/DavidHDev/vue-bits) | 4.7k | MIT | Vue 版动画组件集合 | 按组件复制 |
 | [vueuse/motion](https://github.com/vueuse/motion) | 2.8k | MIT | Vue 组合式动画 | `pnpm add @vueuse/motion` |
 | [gl-transitions/gl-transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | MIT | GLSL 转场集合 | 视频/WebGL 转场参考 |
-| [ts1/flipbook-vue](https://github.com/ts1/flipbook-vue) | 772 | MIT | Vue 3D 翻页 | `pnpm add vue-flipbook` |
+| [ColorlibHQ/velora-ui](https://github.com/ColorlibHQ/velora-ui) | 64 | MIT | 动画 shadcn 组件 + 落地页模板 | 按组件复制 |
 | [scriptituk/xfade-easing](https://github.com/scriptituk/xfade-easing) | 127 | MIT | FFmpeg xfade 缓动扩展 | 与 `cc-ffmpeg-xfade` 配套 |
 
-**选型**：React 优先 `motion` + `react-bits`；需要弹簧手感用 `react-spring`；Vue 用 `vue-bits` + `motion`；视频转场看 `gl-transitions` 和 `xfade-easing`。
+**选型**：React 优先 `motion`；需要弹簧手感用 `react-spring`；Vue 用 `@vueuse/motion` 或 `motion`；视频转场看 `gl-transitions` 和 `xfade-easing`。
 
 ---
 
@@ -42,8 +38,6 @@
 | [goldfire/howler.js](https://github.com/goldfire/howler.js) | 25.5k | MIT | 现代 Web 音频播放库 | `pnpm add howler` |
 | [Tonejs/Tone.js](https://github.com/Tonejs/Tone.js) | 14.9k | MIT | Web Audio 框架，做交互音乐 | `pnpm add tone` |
 | [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) | 10.5k | BSD-3-Clause | 音频波形播放器 | `pnpm add wavesurfer.js` |
-| [SPlayer-Dev/SPlayer](https://github.com/SPlayer-Dev/SPlayer) | 7.4k | MIT | 跨平台音乐播放器 | 桌面端参考 |
-| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 33.8k | Apache-2.0 | 开源 TTS | 模型部署 |
 | [QwenAudio/CosyVoice](https://github.com/QwenAudio/CosyVoice) | 24.4k | Apache-2.0 | 多语言语音生成 | 模型部署 |
 | [kapishdima/soundcn](https://github.com/kapishdima/soundcn) | 951 | MIT | 700+ UI 音效，带预览 | `npx soundcn` |
 | [romainsimon/uisfx](https://github.com/romainsimon/uisfx) | 945 | MIT | 界面音效库（Vue） | 按需引入 |
@@ -51,7 +45,7 @@
 
 **选型**：网页音频播放用 `howler`；需要合成/交互音乐用 `Tone.js`；波形可视化用 `wavesurfer`；UI 反馈音用 `soundcn` 或 `uisfx`。
 
-**注意**：`bbc/peaks.js` 是 LGPL-3.0，商用前确认合规，暂不列入推荐。
+**已排除**：`bbc/peaks.js`（LGPL-3.0）、`SPlayer`（AGPL-3.0）、`fish-speech`（自定义非商用条款）。
 
 ---
 
@@ -64,8 +58,9 @@
 | [feathericons/feather](https://github.com/feathericons/feather) | 26.0k | MIT | 简洁线条图标 | `pnpm add feather-icons` |
 | [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons) | 23.9k | MIT | Tailwind 官方图标 | `pnpm add @heroicons/react` |
 | [microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons) | 11.0k | MIT | Fluent 系统图标 | 按需下载 |
-| [Remix-Design/RemixIcon](https://github.com/Remix-Design/RemixIcon) | 8.5k | Apache-2.0 | 中性风格图标系统 | `pnpm add remixicon` |
+| [Remix-Design/RemixIcon](https://github.com/Remix-Design/RemixIcon) | 8.5k | 自定义（允许商用，禁止单独售卖） | 中性风格图标系统 | `pnpm add remixicon` |
 | [iconoir-icons/iconoir](https://github.com/iconoir-icons/iconoir) | 4.6k | MIT | 1,383 个 SVG 图标 | `pnpm add iconoir-react` |
+| [dicebear/dicebear](https://github.com/dicebear/dicebear) | 10.1k | MIT | 头像生成：种子字符串 → 63 种风格 SVG，七语言实现 | `pnpm add @dicebear/core` |
 | [lucide-icons/lucide](https://github.com/lucide-icons/lucide) | 25.8k | ISC | shadcn 默认图标库 | `pnpm add lucide-react` |
 | [tabler/tabler-icons](https://github.com/tabler/tabler-icons) | 22.7k | MIT | 5000+ 图标，多框架 | `pnpm add @tabler/icons-react` |
 | [iconify/iconify](https://github.com/iconify/iconify) | 6.4k | MIT | 统一 200+ 图标集 | `pnpm add @iconify/react` |
@@ -74,7 +69,7 @@
 
 **选型**：shadcn 项目用 `lucide`；需要品牌图标用 `simple-icons`；图标数量大用 `iconify`；Tailwind 项目用 `heroicons`。
 
-**注意**：Font Awesome 免费版是 CC BY 4.0（图标）+ OFL（字体）+ MIT（代码），商用需保留署名；Pro 版是商业授权。
+**注意**：Font Awesome 免费版是 CC BY 4.0（图标）+ OFL（字体）+ MIT（代码），商用需保留署名；Pro 版是商业授权。RemixIcon 为自定义许可，允许商用但禁止单独售卖图标。
 
 ---
 
