@@ -66,11 +66,11 @@
 | [microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons) | 11.0k | MIT | Fluent 系统图标 | 按需下载 |
 | [Remix-Design/RemixIcon](https://github.com/Remix-Design/RemixIcon) | 8.5k | Apache-2.0 | 中性风格图标系统 | `pnpm add remixicon` |
 | [iconoir-icons/iconoir](https://github.com/iconoir-icons/iconoir) | 4.6k | MIT | 1,383 个 SVG 图标 | `pnpm add iconoir-react` |
-| [lucide-icons/lucide](https://github.com/lucide-icons/lucide) | 20k+ | ISC | shadcn 默认图标库 | `pnpm add lucide-react` |
-| [tabler/tabler-icons](https://github.com/tabler/tabler-icons) | 20k+ | MIT | 5000+ 图标，多框架 | `pnpm add @tabler/icons-react` |
-| [iconify/iconify](https://github.com/iconify/iconify) | 4k+ | MIT | 统一 200+ 图标集 | `pnpm add @iconify/react` |
-| [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) | 21k+ | CC0 1.0 | 品牌 Logo 图标 | `pnpm add simple-icons` |
-| [phosphor-icons/phosphor](https://github.com/phosphor-icons/phosphor) | 8k+ | MIT | 多字重图标系统 | `pnpm add @phosphor-icons/react` |
+| [lucide-icons/lucide](https://github.com/lucide-icons/lucide) | 25.8k | ISC | shadcn 默认图标库 | `pnpm add lucide-react` |
+| [tabler/tabler-icons](https://github.com/tabler/tabler-icons) | 22.7k | MIT | 5000+ 图标，多框架 | `pnpm add @tabler/icons-react` |
+| [iconify/iconify](https://github.com/iconify/iconify) | 6.4k | MIT | 统一 200+ 图标集 | `pnpm add @iconify/react` |
+| [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) | 26.2k | CC0 1.0 | 品牌 Logo 图标 | `pnpm add simple-icons` |
+| [phosphor-icons/phosphor-home](https://github.com/phosphor-icons/phosphor-home) | 7.8k | MIT | 多字重图标系统 | `pnpm add @phosphor-icons/react` |
 
 **选型**：shadcn 项目用 `lucide`；需要品牌图标用 `simple-icons`；图标数量大用 `iconify`；Tailwind 项目用 `heroicons`。
 
